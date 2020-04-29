@@ -23,7 +23,7 @@ export class CreateTransactions1588100422510 implements MigrationInterface {
           },
           {
             name: 'value',
-            type: 'integer',
+            type: 'decimal',
           },
           {
             name: 'category_id',
