@@ -20,11 +20,11 @@ transactionsRouter.get('/', async (request, response) => {
   const transactions = await transactionsRepository.find();
   const balance = await transactionsRepository.getBalance();
 
-  transactions.forEach(tran => {
+  /* transactions.forEach(tran => {
     delete tran.category_id;
-  });
+  }); */
 
-  return response.json({ transactions, balance});
+  return response.json({ transactions, balance });
 });
 
 transactionsRouter.post('/', async (request, response) => {
